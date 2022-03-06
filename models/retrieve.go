@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func (m *DBModel) GetTasks(param TaskList) ([]*TaskList, error) {
+func (m *DBModel) 	GetTasks(param TaskList) ([]*TaskList, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
 	defer cancel()
 
